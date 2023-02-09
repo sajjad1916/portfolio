@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Sajjad-Hasan</title>
+    <link rel="stylesheet" href="default.css">
 </head>
 <body>
-        <!-- HTML -->
+       
         <div id="particles-js" class="navigation">
           <h1 class="hero">Sajjad Hasan</h1>
           <h1 class="hero-title">I am a <span id="text" ></span></h1>
           <nav id="navbar">
-            <div class="container">
+            <div class="nav-container">
+              <a href="#particles-js">Home</a>
               <a href="#about">About</a>
-              <a href="#">Experience</a>
-              <a href="#">Projects</a>
-              <a href="#">Skills</a>
-              <a href="#">Resume</a>
-              <a href="#">Contact</a>
+              <a href="#resume">Experience</a>
+              <a href="#portfolio">Projects</a>
+              <a href="#skills">Skills</a>
+              <a href="https://drive.google.com/file/d/1vPQmpuXa6LA8KH-7i4v-bXvJ6-Vb9i1k/view?usp=share_link" target="_blank">Resume</a>
+              <a href="#contacts">Contact</a>
             </div>
           </nav>
         </div>
 
-        <div class="container bg-dark" id="about">
-          <div class="row align-items-center">
+        <div class="bg-dark" id="about">
+          <div class="container row align-items-center py-5">
             <div class="col-md-6">
               <img src="profile.jpeg" alt="Your Image" class="img-fluid">
             </div>
@@ -52,15 +55,295 @@
           </div>
         </div>
         
+         <!-- ======= Resume Section ======= -->
+  <section id="resume" class="resume section">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Experience</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row d-flex flex-column justify-content-center align-items-center">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Fast Fly Courier</h3>
+          <div class="resume-item pb-0">
+            <h4>Web developer</h4>
+            <h5>2020 April - 2020 September</h5>
+            <p><em>I worked at Fast-Fly-Courier as a web developer for 4 month. I developed their basic website using mern (Mongodb, Expressjs, React, Nodejs) stack. It was a great experience for me.</em></p>
+          </div>
+
+          <h3 class="resume-title">Ekottro</h3>
+          <div class="resume-item">
+            <h4>Web developer</h4>
+            <h5>2020 Novermber - 2021 August</h5>
+            
+            <p>This was a startup e-commerce company. I worked as a web developer and I developed that website using laravel v8. </p>
+          </div>
+          <h3 class="resume-title">Nirbaan Express</h3>
+          <div class="resume-item">
+            <h4>Backend Developer</h4>
+            <h5>2021 September - 2022 April</h5>
+            
+            <p>I did the backend part of this website. My job was to develop backend logic and maintain that website. I used laravel v8 for the backend part of the website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- Start Project Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container section">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Web-App</li>
+            <li data-filter=".filter-project">Project</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>Twitter Analysis</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/twitteranalysis.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <a href="projects/twitteranalysis.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>Image recognition as Service</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/iras.jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <a href="projects/iras.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>Music Streaming Website</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/musicplayer.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <a href="projects/musicplayer.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>Movie Recommender</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              
+              <div class="portfolio-links">
+                <a href="projects/recommender.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>To-Do App</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/todo.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/todo.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+          <!-- <br> -->
+          <center><h4>Resume Section Classifier</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Resume Section Classifier</h4>
+              <div class="portfolio-links">
+                <a href="projects/resume.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <br>
+          <center><h4>Tech Blog</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/blog.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/blog.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+          <center><h4>Video Description Generator</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <center><h4>ML-DL Web-App</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/ml.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         
-         
-      
-            
-          
-      
-        </section>
-        
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+          <!-- <br> -->
+          <center><h4>Image Generator</h4></center>
+          <div class="portfolio-wrap">
+            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <div class="portfolio-links">
+                <a href="projects/gan.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- End Project Section -->
+
+  
+  <section id="skills" class="services">
+    <div class="container bg-light">
+      <div class="section-title">
+        <h2 class="text-dark h2">Skills</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" data-aos="fade-up">
+          <div class="col-md-12 mt-2 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
+            <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
+                <p style="text-align:left;">
+                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
+                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
+                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
+
+                </p>
+            </div>
+            <div class="col-md-12 mt-2 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Frameworks</h4>
+                <p style="text-align:left;">
+                  <img src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="vectorlogo.zone">
+              </p>
+          </div>
+          <div class="col-md-12 mt-2 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
+              <h4 style="text-align:left;color:#09203a">Tools</h4>
+                <p style="text-align:left;">
+                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="vectorlogo.zone">
+                  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="vectorlogo.zone">
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Start Contact Section -->
+
+    <section id="contacts" class="contact section">
+      <div class="container bg-dark">
+  
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+  
+        <div class="row mt-2">
+  
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>My Address</h3>
+              <p>Mirpur</p>
+              <p>Dhaka</p>
+              <p>Bangladesh</p>
+            </div>
+          </div>
+  
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="#" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="#" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                <a href="mailto:sajjad2.2hasan@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+  
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email</h3>
+              <p>sajjad2.2hasan@gmail.com</p>
+              
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Contact</h3>
+              <p>+88 01963-629753</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
         
 
