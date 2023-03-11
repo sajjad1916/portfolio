@@ -12,27 +12,29 @@
     <link rel="stylesheet" href="default.css">
 </head>
 <body>
-       
+       <!-- navbar section with hero section -->
         <div id="particles-js" class="navigation">
           <h1 class="hero">Sajjad Hasan</h1>
           <h1 class="hero-title">I am a <span id="text" ></span></h1>
           <nav id="navbar">
-            <div class="nav-container">
+            <div class="nav-container" >
               <a href="#particles-js">Home</a>
-              <a href="#about">About</a>
-              <a href="#resume">Experience</a>
+              <a class="inactive" href="#about">About</a>
+              <a class="inactive" href="#resume">Experience</a>
               <a href="#portfolio">Projects</a>
-              <a href="#skills">Skills</a>
+              <a class="inactive" href="#skills">Skills</a>
               <a href="https://drive.google.com/file/d/1vPQmpuXa6LA8KH-7i4v-bXvJ6-Vb9i1k/view?usp=share_link" target="_blank">Resume</a>
               <a href="#contacts">Contact</a>
             </div>
           </nav>
         </div>
+        <!-- end of navbar and hero -->
 
+        <!-- about section -->
         <div class="bg-dark" id="about">
           <div class="container row align-items-center py-5">
             <div class="col-md-6">
-              <img src="profile.jpeg" alt="Your Image" class="img-fluid">
+              <img src="assets/img/profile picture.jpg" alt="Your Image" class="img-fluid">
             </div>
             <div class="col-md-6">
               <h2 class="font-weight-bold text-light">About Me</h2>
@@ -60,8 +62,8 @@
     <div class="container">
 
       <div class="section-title">
-        <h2>Experience</h2>
-        <p>Check My Resume</p>
+        <h2 class="text-white h2 pt-5 pb-5 fs-1 fw-bold">Experience</h2>
+        <p class="text-center">Check My Resume</p>
       </div>
 
       <div class="row d-flex flex-column justify-content-center align-items-center">
@@ -97,23 +99,13 @@
     <div class="container section">
 
       <div class="section-title">
-        <h2>Projects</h2>
+        <h2 class="text-white pt-5 pb-5 fs-1 fw-bold">Projects</h2>
       </div>
-
-      <!-- <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Web-App</li>
-            <li data-filter=".filter-project">Project</li>
-          </ul>
-        </div>
-      </div> -->
 
       <div class="row portfolio-container">
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Company site demo React</h4></center>
+          <center><h4 class="pb-2">Company site demo React</h4></center>
           <div class="portfolio-wrap">
             <img src="assets/img/company.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -126,9 +118,9 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Education Demo React</h4></center>
+          <center><h4 class="pb-2">Education Demo React</h4></center>
           <div class="portfolio-wrap">
-            <img src="assets/img/education.png" class="img-fluid" alt="">
+           <a href="https://edu-demo-react.netlify.com" target="_blank"> <img src="assets/img/education.png" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               
               <div class="portfolio-links">
@@ -140,7 +132,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Furniture demo React</h4></center>
+          <center><h4 class="pb-2">Furniture demo React</h4></center>
           <div class="portfolio-wrap">
             <img src="assets/img/furniture.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -153,7 +145,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Restaurant React</h4></center>
+          <center><h4 class="pb-2">Restaurant React</h4></center>
           <div class="portfolio-wrap">
             <img src="assets/img/restaurant.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -166,8 +158,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <!-- <br> -->
-          <center><h4>Nirbaan Express Nextjs</h4></center>
+          <center><h4 class="pb-2">Nirbaan Express Nextjs</h4></center>
           <div class="portfolio-wrap">
             <img src="assets/img/nirbaan.png" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -179,44 +170,6 @@
           </div>
         </div>
 
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Video Description Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>ML-DL Web-App</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/ml.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          
-          <center><h4>Image Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
-                <a href="projects/gan.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
 
       </div>
     </div>
@@ -228,39 +181,37 @@
   <section id="skills" class="services">
     <div class="container bg-light">
       <div class="section-title">
-        <h2 class="text-dark h2">Skills</h2>
+        <h2 class="text-dark h2 pt-5 pb-5 fs-1 fw-bold">Skills</h2>
       </div>
       <div class="row">
         <div class="col-lg-12" data-aos="fade-up">
           <div class="col-md-12 mt-2 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
             <h4 style="text-align:left;color:#09203a">Languages and Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
-                  <img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="vectorlogo.zone" height="50" width="190">
-
+                <p style="text-align:center;">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="upload.wikimedia.org" height="60" width="90">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="vectorlogo.zone" height="70" width="130">
                 </p>
             </div>
             <div class="col-md-12 mt-2 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
               <h4 style="text-align:left;color:#09203a">Frameworks</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="vectorlogo.zone">
+                <p style="text-align:center;">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="vectorlogo.zone">
               </p>
           </div>
           <div class="col-md-12 mt-2 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100" style="background:#fff">
               <h4 style="text-align:left;color:#09203a">Tools</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="vectorlogo.zone">
-                  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="vectorlogo.zone">
+                <p style="text-align:center;">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" alt="vectorlogo.zone">
+                  <img class="p-3" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="vectorlogo.zone">
               </p>
           </div>
         </div>
@@ -274,7 +225,7 @@
       <div class="container bg-dark">
   
         <div class="section-title">
-          <h2>Contact</h2>
+          <h2 class="text-white pt-5 pb-5 fs-1 fw-bold">Contact</h2>
         </div>
   
         <div class="row mt-2">
